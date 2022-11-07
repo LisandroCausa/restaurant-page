@@ -1,0 +1,11 @@
+body {
+	margin: 0;
+}
+
+#content {
+	background: url(./../img/background.jpg);
+	background-size: cover;
+	filter: contrast(70%);
+	width: 100vw;
+	height: 100vh;
+}
