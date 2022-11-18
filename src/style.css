@@ -2,12 +2,37 @@
 	margin: 0;
 }
 
-#content {
+ul {
+	list-style-type: none;
+}
+
+body {
 	background: url(./../img/background.jpg);
 	background-size: cover;
 	filter: contrast(70%);
 	width: 100vw;
 	height: 100vh;
+}
+
+#navbar {
+	text-align: center;
+}
+
+#navbar > ul {
+	display: inline-flex;
+	padding: 0;
+	border: 4px solid rgb(0, 0, 0);
+	background-color: gray;
+}
+
+#navbar > ul > li {
+	color:white;
+	font-size: 2rem;
+	padding: 0 12px;
+}
+
+#navbar > ul > li.selected {
+	background-color: rgb(32, 32, 32);
 }
 
 #main-title {

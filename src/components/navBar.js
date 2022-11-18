@@ -1,14 +1,32 @@
 export default function() {
-	const nav = document.createElement("ul");
+	const nav = document.createElement("nav");
+	nav.id = "navbar";
+	const list = document.createElement("ul");
 
 	const home = navOption("Home");
 	const menu = navOption("Menu");
 	const contact = navOption("Contact");
 
-	nav.appendChild(home);
-	nav.appendChild(menu);
-	nav.appendChild(contact);
+	list.appendChild(home);
+	list.appendChild(menu);
+	list.appendChild(contact);
+
+	const options = list.childNodes;
+	options.forEach(element => {
+		element.addEventListener("click", () => {
+			removeClassFromChilds(list, "selected");
+			element.classList.add("selected");
+		});
+	});
+
+	nav.appendChild(list);
 	return nav;
+}
+
+function removeClassFromChilds(parent, className) {
+	parent.childNodes.forEach(element => {
+		element.classList.remove(className);
+	});
 }
 
 function navOption(text) {
