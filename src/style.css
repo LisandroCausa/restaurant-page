@@ -7,7 +7,7 @@ ul {
 }
 
 body {
-	background: url(./../img/background.jpg);
+	background: url('./img/background.jpg');
 	background-size: cover;
 	filter: contrast(70%);
 	width: 100vw;
@@ -41,3 +41,20 @@ body {
 	font-size: 2.8rem;
 	text-align: center;
 }
+
+#menu {
+	display: flex;
+}
+
+.plate {
+	background-color: white;
+	padding: 12px;
+	border-radius: 12px;
+}
+
+.plate > img {
+	height: 300px;
+	width: 300px;
+	object-fit: cover;
+}
+

@@ -2,15 +2,17 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: {
 	  index: './src/index.js',
     navBar: './src/components/navBar.js',
     mainTitle: './src/components/mainTitle.js',
+    plate: './src/components/plate.js',
+    menu: './src/components/menu.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'restaurant',
+      title: 'development',
     }),
   ],
   output: {
@@ -23,6 +25,10 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
   },
