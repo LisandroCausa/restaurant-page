@@ -9,10 +9,11 @@ module.exports = {
     mainTitle: './src/components/mainTitle.js',
     plate: './src/components/plate.js',
     menu: './src/components/menu.js',
+    contact: './src/components/contact.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'development',
+      title: 'Grilled Meat',
     }),
   ],
   output: {

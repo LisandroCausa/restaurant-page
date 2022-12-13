@@ -1,5 +1,6 @@
 import mainTitle from "./mainTitle";
 import menuContent from "./menu";
+import contactContent from "./contact";
 
 export default function() {
 	const nav = document.createElement("nav");
@@ -34,7 +35,7 @@ export default function() {
 		{
 			const contentDiv = document.getElementById("content");
 			emptyDOMElement(contentDiv);
-			contentDiv.appendChild(document.createElement("p"));
+			contentDiv.appendChild(contactContent());
 		}
 	});
 

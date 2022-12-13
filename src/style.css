@@ -79,3 +79,19 @@ body {
 	font-size: 1.66rem;
 }
 
+#contact {
+	background-color: rgb(212, 212, 212);
+	padding: 18px;
+	width: 40vw;
+	margin: 200px auto;
+	border: 2px dotted black;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 36px;
+}
+
+#contact > p {
+	font-size: 1.8rem;
+	font-weight: 900;
+}
